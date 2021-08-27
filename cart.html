@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>HTML5 Local Storage Project</title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<META NAME='rating' CONTENT='General' />
+<META NAME='expires' CONTENT='never' />
+<META NAME='language' CONTENT='English, EN' />
+<META name="description" content="shopping cart project with HTML5 and JavaScript">
+<META name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
+<META name="author" content="krishivyapar.com">
+<script src="Storage.js"></script>
+
+</head>
+<style>
+	
+	.container-fluid{ padding:200px 400px 500px 400px; 
+		background-image:url("rural-1696661_1920.jpg") }
+</style>
+<div class="container-fluid">
+
+<body onload="doShowAll()">
+	<h1 style="color:rgb(3, 3, 3)"; >Shopping Cart for Krishivyapar</h1>
+	<h1>Insert items and quantity for your shopping cart. </h1>
+	<form name=ShoppingList class="text-center">
+
+		<div id="main">
+			<table>
+				<tr>
+
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+									</tr>
+
+	
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Update" onclick="ModifyItem()"> 
+					    <input type=button value="Delete" onclick="RemoveItem()">
+					</td>
+				</tr>
+			</table>
+		</div>
+<br><br><br>
+		<div id="items_table">&nbsp&nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp 
+			<a target="_blank" href="thankyou.html" class="btn btn-light btn-lg btn-border shadow mb-5">
+				<input type=button value="BUY" onclick="thankyou.html" ></a>&nbsp &nbsp&nbsp 
+
+		</div>
+	</form>
+</div>
+</body>
+</html>
