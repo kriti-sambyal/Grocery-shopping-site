@@ -9,21 +9,16 @@
 <META NAME='language' CONTENT='English, EN' />
 <META name="description" content="shopping cart project with HTML5 and JavaScript">
 <META name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
-<META name="author" content="krishivyapar.com">
+<META name="author" content="dcwebmakers.com">
 <script src="Storage.js"></script>
-
+<link rel="stylesheet" href="StorageStyle.css">
 </head>
-<style>
-	
-	.container-fluid{ padding:200px 400px 500px 400px; 
-		background-image:url("rural-1696661_1920.jpg") }
-</style>
-<div class="container-fluid">
+
 
 <body onload="doShowAll()">
-	<h1 style="color:rgb(3, 3, 3)"; >Shopping Cart for Krishivyapar</h1>
-	<h1>Insert items and quantity for your shopping cart. </h1>
-	<form name=ShoppingList class="text-center">
+	<h2 style="color:GREEN"; >Shopping Cart for Krishivyapar</h2>
+	<p>Insert items and quantity for your shopping cart. </p>
+	<form name=ShoppingList>
 
 		<div id="main">
 			<table>
@@ -31,9 +26,9 @@
 
 					<td><b>Item:</b><input type=text name=name></td>
 					<td><b>Quantity:</b><input type=text name=data></td>
-									</tr>
 
-	
+				</tr>
+
 				<tr>
 					<td>
 					    <input type=button value="Save"   onclick="SaveItem()"> 
@@ -43,13 +38,16 @@
 				</tr>
 			</table>
 		</div>
-<br><br><br>
-		<div id="items_table">&nbsp&nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp 
-			<a target="_blank" href="thankyou.html" class="btn btn-light btn-lg btn-border shadow mb-5">
-				<input type=button value="BUY" onclick="thankyou.html" ></a>&nbsp &nbsp&nbsp 
 
+		<div id="items_table">
+			<h3>Shopping List</h3>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Delete all items</i></label>
+			</p>
 		</div>
 	</form>
-</div>
+
 </body>
 </html>
