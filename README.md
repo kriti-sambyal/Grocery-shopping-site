@@ -3,5 +3,4 @@
 
 # https://kriti-sambyal.github.io/farmer_portal/
 
-*  Developed by Kriti Sambyal
  
