@@ -3,6 +3,5 @@
 
 # https://kriti-sambyal.github.io/farmer_portal/
 
-*  Developed by Kriti Sambyal in Ciperthon - A nationwide Hackathon
-*  Team Memebers : Rayman Ridham Kriti
+*  Developed by Kriti Sambyal
  
